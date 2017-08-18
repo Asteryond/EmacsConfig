@@ -10,7 +10,7 @@
  (require 'cl)
 
 ;; Add Packages
- (defvar my/packages '(
+ (defvar asteryond/packages '(
 		company
 		;; --- Better Editor ---
 		hungry-delete
@@ -28,17 +28,17 @@
 		;; solarized-theme
 		) "Default packages")
 
-(setq package-selected-packages my/packages)
+(setq package-selected-packages asteryond/packages)
 
- (defun my/packages-installed-p ()
-     (loop for pkg in my/packages
+ (defun asteryond/packages-installed-p ()
+     (loop for pkg in asteryond/packages
 	   when (not (package-installed-p pkg)) do (return nil)
 	   finally (return t)))
 
- (unless (my/packages-installed-p)
+ (unless (asteryond/packages-installed-p)
      (message "%s" "Refreshing package database...")
      (package-refresh-contents)
-     (dolist (pkg my/packages)
+     (dolist (pkg asteryond/packages)
        (when (not (package-installed-p pkg))
 	 (package-install
 	  pkg))))
