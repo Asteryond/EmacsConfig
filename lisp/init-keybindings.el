@@ -14,5 +14,8 @@
 ;;将open-init-file绑定在F2键上
 (global-set-key (kbd "<f2>") 'open-init-file)
 
+(global-set-key (kbd "C-c p f") 'counsel-git)
+
+(global-set-key (kbd "C-c a") 'org-agenda)
 
 (provide 'init-keybindings)
