@@ -42,7 +42,7 @@
 	  pkg))))
 
 (setq package-selected-packages my/packages)
-
+(global-auto-revert-mode t)
 ;;Org Mode  语法高亮
 (require 'org)
 (setq org-src-fontify-natively t)
