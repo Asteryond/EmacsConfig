@@ -9,8 +9,6 @@
 ;;关闭文件滑动控江
 (scroll-bar-mode -1)
 
-;;显示行号
-(global-linum-mode 1)
 
 ;;更改光标的样式
 (setq-default cursor-type 'bar)
@@ -18,4 +16,5 @@
 ;;关闭启动帮助画面
 (setq inhibit-splash-screen 1)
 
+;;全屏
 (setq initial-frame-alist (quote ((fullscreen . maximized))))
