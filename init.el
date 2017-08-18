@@ -14,8 +14,9 @@
 (require 'init-better-defaults)
 (require 'init-org)
 (require 'init-keybindings)
-(setq custom-file (expand-file-name "lisp/custom.el" user-emacs-directory))
 
+(setq custom-file (expand-file-name "lisp/custom.el" user-emacs-directory))
+(load custom-file)
 ;;打开配置文件
 (defun open-init-file()
   (interactive)
