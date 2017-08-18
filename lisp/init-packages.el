@@ -60,7 +60,6 @@
 (setq enable-recursive-minibuffers t)
 
 ;;Smartparens
-(require 'smartparens-config)
 (smartparens-global-mode t)
 (show-paren-mode t)
 
