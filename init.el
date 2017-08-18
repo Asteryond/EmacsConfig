@@ -10,7 +10,7 @@
 
 (add-to-list 'load-path "~/.emacs.d/lisp")
 (require 'init-packages)
-
+(require 'init-ui)
 
 (abbrev-mode t)
 (define-abbrev-table 'global-abbrev-table '(
@@ -33,9 +33,6 @@
 (global-set-key (kbd "C-h C-k") 'find-function-on-key)
 
 
-
-
-
 (global-set-key "\C-s" 'swiper)
 (global-set-key (kbd "C-c C-r") 'ivy-resume)
 (global-set-key (kbd "<f6>") 'ivy-resume)
@@ -44,30 +41,6 @@
 (global-set-key (kbd "C-c C-f") 'counsel-describe-function)
 (global-set-key (kbd "C-c C-v") 'counsel-describe-variable)
 
-
-
-
-
-
-;;高亮当前行
-(global-hl-line-mode 1)
-
-
-
-;;关闭工具栏
-(tool-bar-mode -1)
-
-;;关闭文件滑动控江
-(scroll-bar-mode -1)
-
-;;显示行号
-(global-linum-mode 1)
-
-;;更改光标的样式
-(setq-default cursor-type 'bar)
-
-;;关闭启动帮助画面
-(setq inhibit-splash-screen 1)
 
 ;;打开配置文件
 (defun open-init-file()
