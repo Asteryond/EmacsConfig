@@ -24,6 +24,7 @@
 		exec-path-from-shell
 		;; --- Themes ---
 		monokai-theme
+		popwin
 		;; solarized-theme
 		) "Default packages")
 
@@ -120,7 +121,7 @@
 
 ;;禁止生成备份文件
 (setq make-backup-files nil)
-
+(setq auto-save-default nil)
 ;;打开最近的文件
 (require 'recentf)
 (recentf-mode 1)
@@ -129,13 +130,20 @@
 ;;选择一段文字后 输入一个字符会替换选中的部分
 (delete-selection-mode 1)
 
+;;popwin
+(require 'popwin)
+(popwin-mode t)
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(company-idle-delay 0.08)
- '(company-minimum-prefix-length 1))
+ '(company-minimum-prefix-length 1)
+ '(package-selected-packages
+   (quote
+    (company hungry-delete swiper counsel smartparens js2-mode nodejs-repl exec-path-from-shell monokai-theme popwin))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
