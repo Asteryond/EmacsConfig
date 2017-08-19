@@ -22,3 +22,6 @@
 
 ;;选择一段文字后 输入一个字符会替换选中的部分
 (delete-selection-mode t)
+
+;;将yes/no 改为 y/n
+(fset 'yes-or-no-p 'y-or-n-p)
