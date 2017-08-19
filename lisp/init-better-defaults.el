@@ -25,3 +25,18 @@
 
 ;;将yes/no 改为 y/n
 (fset 'yes-or-no-p 'y-or-n-p)
+
+(defun indent-buffer ()
+  (interactive)
+  (indent-region (point-min) (point-max)))
+
+(defun indent-region-or-buffer ()
+  (interactive)
+  (save-excursion
+    (if (region-active-p)
+	(progn
+	  (indent-region (region-beginning) (region-end))
+	  (message "Indented selected region"))
+      (progn
+	(indent-buffer)
+	(message "Indented buffer.")))))

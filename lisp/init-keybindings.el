@@ -18,4 +18,5 @@
 
 (global-set-key (kbd "C-c a") 'org-agenda)
 
+(global-set-key (kbd "C-M-\\") 'indent-region-or-buffer)
 (provide 'init-keybindings)
