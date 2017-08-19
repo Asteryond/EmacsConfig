@@ -22,6 +22,14 @@
 
 (global-set-key (kbd "s-/") 'hippie-expand)
 
+
+;;google-translate
+;;(global-set-key (kbd "C-c t") 'google-translate-at-point)
+;;(global-set-key (kbd "C-c T") 'google-translate-query-translate)
+
+;; youdao-dictionary
+(global-set-key (kbd "C-c t") 'youdao-dictionary-search-at-point+)
+(global-set-key (kbd "C-c v") 'youdao-dictionary-play-voice-at-point)
 (with-eval-after-load 'dired
   (define-key dired-mode-map (kbd "RET") 'dired-find-alternate-file))
 

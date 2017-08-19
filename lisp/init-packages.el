@@ -25,6 +25,8 @@
 		;; --- Themes ---
 		monokai-theme
 		popwin
+		google-translate
+		youdao-dictionary
 		;; solarized-theme
 		) "Default packages")
 
@@ -76,3 +78,15 @@
 ;;popwin
 (require 'popwin)
 (popwin-mode t)
+
+;;google-translate
+;;(require 'google-translate)
+;;(require 'google-translate-default-ui)
+;;(setq-default google-translate-default-source-language "en")
+;;(setq-default google-translate-default-target-language "zh_CH")
+
+;;youdao-dictionary
+;; Enable Cache
+(setq url-automatic-caching t)
+;; Set file path for saving search history
+(setq youdao-dictionary-search-history-file "~/.emacs.d/.youdao")
