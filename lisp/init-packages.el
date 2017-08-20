@@ -90,3 +90,4 @@
 (setq url-automatic-caching t)
 ;; Set file path for saving search history
 (setq youdao-dictionary-search-history-file "~/.emacs.d/.youdao")
+(push "*Youdao Dictionary*" popwin:special-display-config)
