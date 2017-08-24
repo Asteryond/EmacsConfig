@@ -3,5 +3,6 @@
 (setq org-src-fontify-natively t)
 
 (setq  org-agenda-files '("~/org"))
-
+(org-indent-mode t)
+(setq org-startup-indented t)
 (provide 'init-org)

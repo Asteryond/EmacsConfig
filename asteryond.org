@@ -2,7 +2,6 @@
 #+BEGIN_SRC emacs-lisp
 (package-initialize)
 #+END_SRC
-
 ** 配置loadPath
 #+BEGIN_SRC emacs-lisp
 (add-to-list 'load-path "~/.emacs.d/lisp")
@@ -20,6 +19,7 @@
 
 (setq custom-file (expand-file-name "lisp/custom.el" user-emacs-directory))
 (load custom-file)
+
 ;;打开配置文件
 #+END_SRC
  

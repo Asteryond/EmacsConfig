@@ -25,8 +25,11 @@
 		;; --- Themes ---
 		monokai-theme
 		popwin
-		google-translate
+		auctex
+		cdlatex
+
 		youdao-dictionary
+		
 		;; solarized-theme
 		) "Default packages")
 
@@ -91,3 +94,5 @@
 ;; Set file path for saving search history
 (setq youdao-dictionary-search-history-file "~/.emacs.d/.youdao")
 (push "*Youdao Dictionary*" popwin:special-display-config)
+
+

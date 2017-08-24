@@ -16,4 +16,5 @@
 
 (setq custom-file (expand-file-name "lisp/custom.el" user-emacs-directory))
 (load custom-file)
+
 ;;打开配置文件

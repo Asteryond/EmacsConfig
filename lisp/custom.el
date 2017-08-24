@@ -5,10 +5,7 @@
  ;; If there is more than one, they won't work right.
  '(company-idle-delay 0.08)
  '(company-minimum-prefix-length 1)
- '(package-selected-packages
-   (quote
-    (company hungry-delete swiper counsel smartparens js2-mode nodejs-repl exec-path-from-shell monokai-theme popwin)))
- '(show-paren-mode t)
+  '(show-paren-mode t)
  '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
