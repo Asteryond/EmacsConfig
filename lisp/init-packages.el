@@ -27,9 +27,12 @@
 		popwin
 		auctex
 		cdlatex
-
+		org-download
 		youdao-dictionary
-		
+		yasnippet
+		ycmd
+		company-ycmd
+		flycheck-ycmd
 		;; solarized-theme
 		) "Default packages")
 
@@ -48,6 +51,19 @@
 	 (package-install
 	  pkg))))
 
+;;ycmd
+(require 'ycmd)
+(add-hook 'after-init-hook #'global-ycmd-mode)
+(set-variable 'ycmd-server-command '("python" "/home/asteryond/ycmd/ycmd/"))
+(set-variable 'ycmd-global-config "~/ycmd/examples/.ycm_extra_conf.py")
+
+(require 'company-ycmd)
+(company-ycmd-setup)
+(add-hook 'after-init-hook #'global-company-mode)
+
+(require 'flycheck-ycmd)
+(flycheck-ycmd-setup)
+(add-hook 'after-init-hook #'global-flycheck-mode)
 
 ;;Nodejs
 (require 'nodejs-repl)
@@ -70,6 +86,12 @@
 
 ;;company
 (global-company-mode t)
+
+
+;;yasnippet
+(require 'yasnippet)
+(yas-global-mode 1)
+
 
 ;;hungry-delete
 (require 'hungry-delete)

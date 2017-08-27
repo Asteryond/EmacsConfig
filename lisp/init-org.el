@@ -5,4 +5,7 @@
 (setq  org-agenda-files '("~/org"))
 (org-indent-mode t)
 (setq org-startup-indented t)
+
+(add-hook 'org-mode-hook 'turn-on-cdlatex)
 (provide 'init-org)
+

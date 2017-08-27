@@ -1,0 +1,5 @@
+# -*- mode: snippet -*-
+# name: sp
+# key: sp
+# --
+${1:a}_{$2}^{$3}
