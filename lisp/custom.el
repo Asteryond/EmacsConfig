@@ -5,6 +5,11 @@
  ;; If there is more than one, they won't work right.
  '(company-idle-delay 0.08)
  '(company-minimum-prefix-length 1)
+ '(custom-safe-themes
+   (quote
+    ("8aebf25556399b58091e533e455dd50a6a9cba958cc4ebb0aab175863c25b9a4" default)))
+ '(popwin:popup-window-position (quote right))
+ '(popwin:popup-window-width 80)
  '(show-paren-mode t)
  '(tool-bar-mode nil))
 (custom-set-faces

@@ -33,4 +33,21 @@
 (with-eval-after-load 'dired
   (define-key dired-mode-map (kbd "RET") 'dired-find-alternate-file))
 
+;;js2-refactor
+(js2r-add-keybindings-with-prefix "C-c C-m")
+
+;;expand-region
+(global-set-key (kbd "C-=") 'er/expand-region)
 (provide 'init-keybindings)
+
+;;iedit
+(global-set-key (kbd "C-;") 'iedit-mode)
+
+(global-set-key (kbd "C-c r") 'org-capture)
+
+(global-set-key (kbd "C-c t i") 'my-toggle-web-indent)
+
+(global-set-key (kbd "M-s o") 'occur-dwim)
+
+(global-set-key (kbd "M-s i") 'counsel-imenu)
+
